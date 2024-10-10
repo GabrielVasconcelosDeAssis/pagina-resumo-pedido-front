@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --azul: #0e5f9e;
+    --vermelho:#d93e41;
+    --preto:#122331;
+    --azulCinza:#255e78;
+    --cinzaAzul:#deebff;
+    --brancoCinza:#f2f5fc;
+    --branco:#ffffff;
+}
+
+body {
+        background-color: rgb(49, 135, 206);
+        color: var(--preto);
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh; 
+    
+}
+
+.tudo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-left:  20rem;
+    padding-right: 20rem;
+    margin-top: 1rem;
+
+}
+img{
+    display:block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+    box-shadow: 5px rgba(0, 0, 0, 0.2);
+}
+
+.h1{
+    background-color: var(--branco);
+    text-align: center;
+    font-size: 1.0rem;
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+.p{
+    background-color: var(--branco);
+    color: var(--azul);
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+.fundo-plano{
+    background-color: var(--branco);
+    width: 100%;
+    padding: 1rem 5rem;
+}
+
+.div-cinza{
+    background-color: var(--brancoCinza);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+}
+.div-img{
+    background-color: var(--cinzaAzul);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 5rem;
+    color: var(--azul);
+
+}
+
+.div-plano h1{
+    font-size: 1.2rem;
+    color: var(--preto);
+    font-weight: bold;
+}
+.div-plano p{
+    font-size: 1.0rem;
+    color: var(--azulCinza);
+    font-weight: bold;
+}
+.fundo-confirmar-cancelar{
+    background-color: var(--branco);
+    border-radius: 0rem 0rem 1rem 1rem;
+    box-shadow: 5px rgba(0, 0, 0, 0.2);
+}
+button{
+    border:  none;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.0rem;
+    color: var(--azul);
+    background: none;
+    margin: 1rem 1rem;
+    font-weight: bold;
+}
+.botao-confirmar{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.botao-confirmar > button{
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 1rem 4.0rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.div-cancelar{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px)  {
+    .tudo {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 16px;
+    }
+
+    .div-cinza {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .div-img{
+        padding: 0.7rem;
+   
+    }
+    
+    .div-plano h1{
+        padding: 0.3rem;
+    }
+    .div-plano p{
+        padding: 0.5rem;
+    }
+
+}
